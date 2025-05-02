@@ -1,0 +1,54 @@
+<div class="dashboard-wrapper">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="logo">UNCC's News</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li><a routerLink="/summary" routerLinkActive="active">Summary</a></li>
+      <li><a routerLink="/reports" routerLinkActive="active">Reports</a></li>
+    </ul>
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </nav>
+
+  <div class="dashboard-container">
+    <h1>UNCC Article Chart #2</h1>
+
+    <section class="chart-section">
+      <div class="chart-container">
+        <canvas id="reports-chart"></canvas>
+      </div>
+
+      <div class="chart-explanation">
+        <h3>UNCC News Article Report</h3>
+        <p>
+          The line chart shows how The Leon Levine Foundation’s support for the
+          Levine Scholars Program has steadily grown since its inception.
+          Starting at zero in 2009, cumulative donations rise to about $10
+          million by 2012, then jump sharply to $30 million around the program’s
+          first major expansion in 2016. A further increase to $40 million by
+          2020 reflects continued commitment, and the latest $24.9 million gift
+          pushes the total past $53 million in 2025. This upward trajectory
+          underscores the Foundation’s unwavering, long-term investment in the
+          scholars’ success.
+        </p>
+
+        <div class="source-reference">
+          <strong>Data Source:</strong> This data was compiled from
+          <a
+            href="https://inside.charlotte.edu/2025/05/01/24-9-million-from-the-leon-levine-foundation-expands-and-sustains-unc-charlottes-transformative-levine-scholars-program/"
+            target="_blank"
+            >UNCC's official news page</a
+          >. This article was published on May 1, 2025, and it discusses a $24.9
+          million donation from the Leon Levine Foundation to expand and sustain
+          the UNCC Levine Scholars Program. The article highlights the impact of
+          this funding on the university's commitment to providing
+          transformative educational opportunities for students.
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

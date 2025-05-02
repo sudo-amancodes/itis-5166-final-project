@@ -1,0 +1,53 @@
+<div class="dashboard-wrapper">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="logo">UNCC's News</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li><a routerLink="/summary" routerLinkActive="active">Summary</a></li>
+      <li><a routerLink="/reports" routerLinkActive="active">Reports</a></li>
+    </ul>
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </nav>
+
+  <div class="dashboard-container">
+    <h1>UNCC Article Chart #1</h1>
+
+    <section class="chart-section">
+      <div class="chart-container">
+        <canvas id="summary-chart"></canvas>
+      </div>
+
+      <div class="chart-explanation">
+        <h3>UNCC News Article Report</h3>
+        <p>
+          The chart reveals that in-state candidates have generally outnumbered
+          out-of-state applicants from 2021 to 2024, but with more pronounced
+          year-to-year swings. In-state numbers rose from 11 in 2021 to 16 in
+          2022, dipped to 9 in 2023, then surged to 19 in 2024. In contrast,
+          out-of-state candidates showed steadier growth—starting at 7 in 2021,
+          climbing to 9 in 2022, then holding at 10 for both 2023 and 2024. This
+          suggests that while interest from non-residents has steadily increased
+          and stabilized, in-state engagement can vary more dramatically from
+          one year to the next.
+        </p>
+        <div class="source-reference">
+          <strong>Data Source:</strong> This data was compiled from
+          <a
+            href="https://inside.charlotte.edu/2025/05/01/24-9-million-from-the-leon-levine-foundation-expands-and-sustains-unc-charlottes-transformative-levine-scholars-program/"
+            target="_blank"
+            >UNCC's official news page</a
+          >. This article was published on May 1, 2025, and it discusses a $24.9
+          million donation from the Leon Levine Foundation to expand and sustain
+          the UNCC Levine Scholars Program. The article highlights the impact of
+          this funding on the university's commitment to providing
+          transformative educational opportunities for students.
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

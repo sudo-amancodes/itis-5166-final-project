@@ -1,0 +1,97 @@
+<div class="dashboard-wrapper">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <span class="logo">UNCC's News</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </li>
+      <li><a routerLink="/summary" routerLinkActive="active">Summary</a></li>
+      <li><a routerLink="/reports" routerLinkActive="active">Reports</a></li>
+    </ul>
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </nav>
+
+  <div class="dashboard-container">
+    <h1>UNC Charlotte’s Levine Scholars Program</h1>
+
+    <section class="topic-summary">
+      <h2>200-Word Summary</h2>
+      <div class="summary-content">
+        <p>
+          The topic that I got assigned was UNCC's latest news from this month.
+          I read about the Leon Levine Foundation and how they have pledged
+          another $24.9 million to UNC Charlotte’s Levine Scholars Program,
+          extending its support through the 2032–33 academic year. That means
+          the Foundation has now contributed nearly $53 million in total—making
+          it the university’s biggest-ever donor. This scholarship, which began
+          in 2009, covers four years of tuition (about $124,000 for in-state
+          students and $187,000 for out-of-state), but it offers so much more.
+          Each Levine Scholar receives one-on-one mentoring, opportunities for
+          overseas study, professional development workshops, and leadership
+          training. Every student also gets an $8,000 grant to design a
+          community service project—past scholars have helped rebuild after
+          disasters in Puerto Rico and led education programs in Charlotte.
+          Nearly 200 alumni have gone on to advanced degrees at places like
+          Harvard, Princeton, Oxford, and Johns Hopkins, and many now work in
+          roles where social impact is a top priority. The incoming Class of
+          2029 represents ten North Carolina counties and six other states,
+          showing just how far this program reaches. In honor of Leon and Sandra
+          Levine’s generosity, UNC Charlotte named Levine Hall in 2016—a
+          residence hall that houses the Honors College and the Levine Scholars
+          offices—so their legacy lives on both in funding and in the hall
+          itself.
+        </p>
+        <div class="source-reference">
+          <strong>Data Source:</strong> This data was compiled from
+          <a
+            href="https://inside.charlotte.edu/2025/05/01/24-9-million-from-the-leon-levine-foundation-expands-and-sustains-unc-charlottes-transformative-levine-scholars-program/"
+            target="_blank"
+            >UNCC's official news page</a
+          >. This article was published on May 1, 2025, and it discusses a $24.9
+          million donation from the Leon Levine Foundation to expand and sustain
+          the UNCC Levine Scholars Program. The article highlights the impact of
+          this funding on the university's commitment to providing
+          transformative educational opportunities for students.
+        </div>
+      </div>
+    </section>
+
+    <section class="technical-details">
+      <h2>Technical Implementation</h2>
+      <p>
+        This UNCC News Portal is built using Angular 19 for the frontend,
+        leveraging its component-based architecture and reactive forms module
+        for dynamic user interactions. The backend is powered by Node.js with
+        Express, providing RESTful API endpoints for data retrieval and
+        authentication via JSON Web Tokens (JWT). MongoDB serves as the
+        database, storing chart data, user data, and takes the news articles
+        from the UNCC news page with efficient document-based structures. For
+        data visualization, Chart.js is implemented to render dynamic charts
+        representing various metrics and trends in university news coverage. The
+        application features responsive design using SCSS, ensuring optimal
+        viewing experiences across all devices.
+      </p>
+    </section>
+
+    <!-- <section class="articles-list" *ngIf="articles.length > 0">
+      <h2>Latest Articles</h2>
+      <div class="article-container">
+        <div class="article-card" *ngFor="let article of articles">
+          <h3>{{ article.title }}</h3>
+          <p class="article-meta">
+            {{ article.date | date : "medium" }}
+          </p>
+          <p class="article-excerpt">
+            {{ article.content | slice : 0 : 150 }}...
+          </p>
+          <a class="read-more" [href]="article.url" target="_blank"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </section> -->
+  </div>
+</div>
